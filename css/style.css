@@ -36,7 +36,41 @@ h2{
   border: solid 2px red;
 }
 nav ul{
-  list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.portrait {
+      width: 250px;
+      height: 250px;
+      background: url('../images/kenton_hoffmann.jpg');
+      border-radius: 50%;
+      border: solid 3px;
+    }
+  }
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: default;
+    transition: default;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
 }
