@@ -4,12 +4,28 @@ html{
 body{
   font-size: 18px;
   margin: 10;
-}
+  font-family: serif, arial, "Times New Roman";
+  color: black;
+  background-image: url("../images/pastelpurple.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  /* background color:#8d09e4, #a161dd (purple, light-purple)
+  color:  (dark-yellow, orange)
+  */
+}
+header{
+  background-color:#a161dd;
+  color: #f1f227;
+  padding:10px;
+}
 h1{
   font-size: 2em;
   text-align: center;
-  line-height: 2;
+  line-height: 1;
 }
 
 h2{
@@ -25,52 +41,199 @@ h2{
   top:-40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-
   z-index: 1;
+  text-decoration: none;
+  color: black;
 }
 .skip a:focus{
-  top:0;
+  top:0px;
 }
 
 *:focus{
   border: solid 2px red;
 }
-nav ul{
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0;
   display: flex;
-  flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 100vh;
+  height: 75px;
+  background-color: light-purple;
   overflow: hidden;
 }
+nav .container {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
-.portrait {
-      width: 250px;
-      height: 250px;
-      background: url('../images/kenton_hoffmann.jpg');
-      border-radius: 50%;
-      border: solid 3px;
+.flex-container{
+    display: -webkit-box; /* for Safari */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding: 30px;
+    -webkit-box-pack: space-between;
+      justify-content:space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: 100px 500px 100px;
+    grid-column: 2 / span 1;
+  }
+
+.flip-card {
+	overflow: hidden;
+	background-color: transparent;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: auto;
+	border: 1px solid black;
+  perspective: 1000px; /* Remove this to delete the 3D effect */
+
+  }
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  }
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  }
+.flip-card-back {
+  background-color: purple;
+  color: black;
+  transform: rotateY(180deg);
+  }
+
+.main-grid{
+    display:grid;
+    grid-template-columns: 95vw;
+    grid-template-rows:auto;
+    margin-top: 10px;
+    justify-items: center;
+    align-self: center;
+    grid-row-gap: 15px;
+  }
+  .kenton_hoffmann{
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+.gallery-flex{
+  display:flex;
+  flex-direction: column;
+  column-gap: 10px;
+  }
+.gallery-flex img{
+    display: inline-block;
+    margin: 0 0 1em;
+    max-width: 75vw;
+  }
+.project-grid{
+  display: grid;
+  grid-template-columns: 95vw;
+  grid-row-gap: 15px;
+}
+.project-grid h2{
+  text-align: center;
+  margin-top: 10px;
+}
+.project-grid img{
+  max-height: 50vh;
+  align-self: center;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-row-gap: 10px;
+
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px){
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  }
+  .gallery-flex{
+    columns: 2;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery-flex img{
+    max-width: 47vw;
+  }
+  nav ul{
+    flex-direction: row;
+  }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  .gallery-flex {
+    columns: 3;
+  }
+
+  .gallery-flex img{
+      max-width: 30vw;
+    }
+
+  .container{
+    grid-template-rows: 70px 150px 400px 400px 400px 400px 100px;
+    grid-template-columns: 50px auto 500px auto 50px;
+  }
+
+
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+
+    }
+
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: default;
+      transition: default;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
     }
   }
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-
-  }
-
-  .skip a{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: default;
-    transition: default;
-    z-index: 1;
-  }
-
-  .skip a:focus{
-    top:0;
-  }
-}
