@@ -321,21 +321,48 @@ nav li:hover{
   margin:auto;
 }
 .contact-information{
-  width: 660px;
+  display: grid;
+  grid-template-columns: 5vw 80vw 5vw;
   padding: 20px 50px 20px 50px;
 	margin: 20px auto;
-	min-height: 500px;
-	height: auto !important;
-	height: 500px;
+	height: auto;
+	object-fit: contain;
+  grid-row-gap: 10px;
 }
-#contact-area {
-	width: 600px;
+.contact-information h1{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+
+}
+#contact-paragraph{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+#contact-email{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+#contact-linkedin{
+  grid-column: 2/span 1;
+  grid-row: 4/span 1;
+}
+#contact-phone{
+  grid-column: 2/span 1;
+  grid-row: 5/span 1;
+}
+#contact-github{
+  grid-column: 2/span 1;
+  grid-row: 6/span 1;
+}
+#contact-area{
+  grid-column: 2/span 1;
+	grid-row: 7/span 1;
 	margin-top: 25px;
 }
 
 #contact-area input, #contact-area textarea {
 	padding: 5px;
-	width: 471px;
+	width: 80vw;
 	font-family: Helvetica, sans-serif;
 	font-size: 1.4em;
 	margin: 0px 0px 10px 0px;
@@ -357,7 +384,7 @@ nav li:hover{
 
 label {
 	float: left;
-	text-align: right;
+	text-align: left;
 	margin-right: 15px;
 	width: 100px;
 	padding-top: 5px;
