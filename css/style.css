@@ -62,7 +62,7 @@ h2{
 *:focus{
   border: solid 2px red;
 }
-nav {
+.nav{
   position: fixed;
   top: 0;
   left: 0;
@@ -137,12 +137,12 @@ nav {
 
 .main-grid{
     display:grid;
-    grid-template-columns: 95vw;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:auto;
     margin-top: 10px;
-    justify-items: center;
     align-self: center;
-    grid-row-gap: 15px;
+    grid-row-gap: 20px;
   }
   .kenton_hoffmann{
     grid-column: 1/span 1;
