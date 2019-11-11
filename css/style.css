@@ -130,7 +130,7 @@ nav li:hover{
 
 .main-grid{
     display:grid;
-    grid-template-columns: 10px 1fr 5fr 1fr 10px;
+    grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: auto;
     margin-top: 10px;
     grid-row-gap: 20px;
@@ -160,16 +160,15 @@ nav li:hover{
 }
 .recent-projects{
   display: grid;
-  grid-template-columns: 10px 1fr 5fr 1fr 10px;
+  grid-template-columns: 10vw 80vw 10vw;
   grid-row-gap: 15px;
   grid-template-rows: auto;
 }
 
 .recent-projects img{
-  grid-columns: 2/4;
-  height:50vh;
-  width:100%;
-  align-self: center;
+  grid-columns: 2/span 1;
+  height:auto;
+  max-width:40vw;
   object-fit: contain;
 }
 .recent-projects h2{
@@ -207,92 +206,96 @@ nav li:hover{
   }
 .project-grid{
   display: grid;
-  grid-template-columns: 90vw;
+  grid-template-columns: 5vw 80vw 5vw;
   grid-row-gap: 10px;
 }
 .project-grid img{
-  max-height: 60vh;
-  width: auto;
-  align-self: center;
+  max-width: 30vw;
+  height: auto;
   object-fit: contain;
 }
 #projects-list{
-  grid-column: 1/span 1;
+  grid-column: 2/span 1;
   grid-row: 1/span 1;
 }
-.project1-picture{
-  grid-column: 1/span 1;
+#project1{
+  grid-column: 2/span 1;
   grid-row: 2/span 1;
 }
-#project1{
-  grid-column: 1/span 1;
+#project1-info{
+  grid-column: 2/span 1;
   grid-row: 3/span 1;
 }
-#project1-info{
-  grid-column: 1/span 1;
+.project1-picture{
+  grid-column: 2/span 1;
   grid-row: 4/span 1;
-}
-.project2-picture{
-  grid-column: 1/span 1;
-  grid-row: 5/span 1;
+  margin: auto;
 }
 #project2{
-  grid-column: 1/span 1;
-  grid-row: 6/span 1;
+  grid-column: 2/span 1;
+  grid-row: 5/span 1;
 }
 #project2-info{
-  grid-column: 1/span 1;
-  grid-row: 7/span 1;
+  grid-column: 2/span 1;
+  grid-row: 6/span 1;
 }
-.project3-picture{
-  grid-column: 1/span 1;
-  grid-row: 8/span 1;
+.project2-picture{
+  grid-column: 2/span 1;
+  grid-row: 7/span 1;
+  margin: auto;
 }
 #project3{
-  grid-column: 1/span 1;
-  grid-row: 9/span 1;
+  grid-column: 2/span 1;
+  grid-row: 8/span 1;
 }
 #project3-info{
-  grid-column: 1/span 1;
-  grid-row: 10/span 1;
+  grid-column: 2/span 1;
+  grid-row: 9/span 1;
 }
-.project4-picture{
-  grid-column: 1/span 1;
-  grid-row: 11/span 1;
+.project3-picture{
+  grid-column: 2/span 1;
+  grid-row: 10/span 1;
+  margin:auto;
 }
 #project4{
-  grid-column: 1/span 1;
-  grid-row: 12/span 1;
+  grid-column: 2/span 1;
+  grid-row: 11/span 1;
 }
 #project4-info{
-  grid-column: 1/span 1;
-  grid-row: 13/span 1;
+  grid-column: 2/span 1;
+  grid-row: 12/span 1;
 }
-.project5-picture{
-  grid-column: 1/span 1;
-  grid-row: 14/span 1;
+.project4-picture{
+  grid-column: 2/span 1;
+  grid-row: 13/span 1;
+  margin: auto;
 }
 #project5{
-  grid-column: 1/span 1;
-  grid-row: 15/span 1;
+  grid-column: 2/span 1;
+  grid-row: 14/span 1;
 }
 #project5-info{
-  grid-column: 1/span 1;
-  grid-row: 16/span 1;
+  grid-column: 2/span 1;
+  grid-row: 15/span 1;
 }
-.project6-picture{
-  grid-column: 1/span 1;
-  grid-row: 17/span 1;
+.project5-picture{
+  grid-column: 2/span 1;
+  grid-row: 16/span 1;
+  margin:auto;
 }
 #project6{
-  grid-column: 1/span 1;
-  grid-row: 18/span 1;
+  grid-column: 2/span 1;
+  grid-row: 17/span 1;
 }
 #project6-info{
-  grid-column: 1/span 1;
-  grid-row: 19/span 1;
+  grid-column: 2/span 1;
+  grid-row: 18/span 1;
 }
-
+.project6-picture{
+  grid-column: 2/span 1;
+  grid-row: 19/span 1;
+  margin:auto;
+}
 @media screen and (min-width: 600px){
   .menu{
     display: flex;
@@ -323,6 +326,7 @@ nav li:hover{
   }
   .menu {
         display: flex;
+        margin-left: 10px;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
