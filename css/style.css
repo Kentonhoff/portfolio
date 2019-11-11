@@ -27,7 +27,7 @@ footer{
   background-color: #a161dd;
   color: #f1f227;
   grid-column: 1 / -1;
-  grid-row: 7 / 8;
+  grid-row: -1;
   padding-top: 30px;
   text-align: center;
 }
@@ -97,7 +97,7 @@ nav li:hover{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
+	width: 50vw;
 	height: auto;
 	border: 1px solid black;
   perspective: 1000px; /* Remove this to delete the 3D effect */
@@ -134,7 +134,7 @@ nav li:hover{
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: auto;
     margin-top: 10px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     justify-items: center;
     padding: 20px;
   }
@@ -144,7 +144,7 @@ nav li:hover{
   }
 .main-grid-image img{
   max-width: 60vw;
-  height: 100%;
+  height: 80%;
   overflow: hidden;
   object-fit: contain;
 }
@@ -220,16 +220,14 @@ p{
   display: inline-block;
   width: auto;
   margin: 0 8px 8px 0;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
   }
 .gallery-item img{
   max-width: 100%;
   height:auto;
   object-fit: contain;
   overflow: hidden;
-  }
-.gallery-item{
-  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
-  transition: filter .25s ease-in-out;
   }
 .gallery-item: hover{
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
