@@ -70,6 +70,7 @@ nav ul{
 }
 nav li{
   padding-right: 20px;
+  padding-left: 10px;
   font-size: 200%;
   display: block;
   flex-grow: 1;
@@ -138,7 +139,7 @@ nav li:hover{
     padding: 20px;
   }
 .main-grid-image{
-  grid-column: 3/span 2;
+  grid-column: 2/span 1;
   grid-row: 1/span 1;
   }
 .main-grid-image img{
@@ -147,12 +148,12 @@ nav li:hover{
   overflow: hidden;
   object-fit: contain;
 }
-.main-grid h2{
+#introduction{
   text-align: center;
   grid-column: 2/span 1;
   grid-row: 2/span 1;
 }
-.main-grid p{
+#introduction-text{
   text-align: center;
   grid-column: 2/span 1;
   grid-row: 3/span 1;
@@ -166,16 +167,39 @@ nav li:hover{
 }
 
 .recent-projects img{
-  grid-columns: 2/span 1;
-  height:auto;
-  max-width:40vw;
+  max-height:40vh;
+  width:auto;
   object-fit: contain;
 }
-.recent-projects h2{
-  grid-column:3/4;
+#recent-projects-list{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
 }
-.recent-projects p{
-  grid-column:4/5;
+#recent-p1-header{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+#recent-p1-text{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+.recent-p1-pic{
+  grid-column: 2/span 1;
+  grid-row: 4/span 1;
+  margin: auto;
+}
+#recent-p2-header{
+  grid-column: 2/span 1;
+  grid-row: 5/span 1;
+}
+#recent-p2-text{
+  grid-column: 2/span 1;
+  grid-row: 6/span 1;
+}
+.recent-p2-pic{
+  grid-column: 2/span 1;
+  grid-row: 7/span 1;
+  margin: auto;
 }
 .gallery{
   flex: 1;
@@ -295,6 +319,9 @@ nav li:hover{
   grid-column: 2/span 1;
   grid-row: 19/span 1;
   margin:auto;
+}
+.contact-information{
+
 }
 @media screen and (min-width: 600px){
   .menu{
