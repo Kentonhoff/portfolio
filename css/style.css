@@ -148,6 +148,12 @@ nav li:hover{
   overflow: hidden;
   object-fit: contain;
 }
+p{
+  align-self: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 10px;
+}
 #introduction{
   text-align: center;
   grid-column: 2/span 1;
@@ -382,7 +388,7 @@ nav li:hover{
 	float: right;
 }
 
-label {
+label{
 	float: left;
 	text-align: left;
 	margin-right: 15px;
