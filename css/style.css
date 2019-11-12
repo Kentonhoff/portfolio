@@ -194,8 +194,8 @@ p{
   border-radius: 8px;
   }
 .gallery-item:hover{
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   }
 .project-grid{
   display: grid;
