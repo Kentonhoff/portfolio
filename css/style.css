@@ -4,7 +4,7 @@ html{
 body{
   font-size: 18px;
   margin: 10;
-  font-family: serif, arial, "Times New Roman";
+  font-family: serif, Arial, "Times New Roman";
   color: black;
   background-image: url("../images/pastelpurple.jpg");
   /* Create the parallax scrolling effect */
@@ -92,42 +92,7 @@ nav li:hover{
   text-decoration: underline;
   background-color: light-orange;
 }
-.flip-card {
-	overflow: hidden;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50vw;
-	height: auto;
-	border: 1px solid black;
-  perspective: 1000px; /* Remove this to delete the 3D effect */
-  }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  }
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  }
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  backface-visibility: hidden;
-  }
-.flip-card-front {
-  background-image: url("../images/kenton_hoffmann.jpg")
-  }
-.flip-card-back {
-  background-color: purple;
-  color: black;
-  transform: rotateY(180deg);
-  }
 
 .main-grid{
     display:grid;
@@ -324,43 +289,90 @@ p{
   grid-row: 19/span 1;
   margin:auto;
 }
+.flip-card {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-row-gap: 15px;
+  grid-template-rows: auto;
+  background-color: transparent;
+  max-width: 30vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card img{
+  max-width:30vw;
+  width:auto;
+  object-fit: contain;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 30vw;
+  height: auto;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: purple;
+  color: white;
+  transform: rotateY(180deg);
+}
 .contact-information{
   display: grid;
   grid-template-columns: 5vw 80vw 5vw;
+  grid-template-rows: auto;
   padding: 20px 50px 20px 50px;
 	margin: 20px auto;
-	height: auto;
 	object-fit: contain;
   grid-row-gap: 10px;
 }
 .contact-information h1{
   grid-column: 2/span 1;
-  grid-row: 1/span 1;
+  grid-row: 3/span 1;
 
 }
 #contact-paragraph{
   grid-column: 2/span 1;
-  grid-row: 2/span 1;
+  grid-row: 4/span 1;
 }
 #contact-email{
   grid-column: 2/span 1;
-  grid-row: 3/span 1;
+  grid-row: 5/span 1;
 }
 #contact-linkedin{
   grid-column: 2/span 1;
-  grid-row: 4/span 1;
-}
-#contact-phone{
-  grid-column: 2/span 1;
-  grid-row: 5/span 1;
+  grid-row: 6/span 1;
 }
 #contact-github{
   grid-column: 2/span 1;
-  grid-row: 6/span 1;
+  grid-row: 7/span 1;
 }
 #contact-area{
   grid-column: 2/span 1;
-	grid-row: 7/span 1;
+	grid-row: 8/span 1;
 	margin-top: 25px;
 }
 
