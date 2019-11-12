@@ -84,6 +84,11 @@ nav li:hover{
   text-align: center;
   background-color: #FFCC33;
 }
+.navbar .current{
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  background-color: #4cee4e; 
+}
 .menu{
   display: flex;
   flex-wrap: wrap;
