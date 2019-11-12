@@ -22,7 +22,9 @@ header{
   color: #f1f227;
   padding:10px;
 }
-
+#main{
+  text-shadow: 2px 2px 5px blue;
+}
 footer{
   background-color: #a161dd;
   color: #f1f227;
