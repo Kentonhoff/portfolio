@@ -72,7 +72,7 @@ nav ul{
 }
 nav li{
   padding-right: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 200%;
   display: block;
   flex-grow: 1;
@@ -87,7 +87,7 @@ nav li:hover{
 .navbar .current{
   text-decoration: underline;
   text-decoration-style: dashed;
-  background-color: #4cee4e; 
+  background-color: #4cee4e;
 }
 .menu{
   display: flex;
@@ -451,8 +451,105 @@ label{
   .menu li{
     padding: 15 px; 10px;
   }
+  .project-grid{
+    display: grid;
+    grid-template-columns: 5vw 20vw 60vw 5vw;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .project-grid img{
+    max-width: 20vw;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid black;
+  }
+  #projects-list{
+    grid-column: 2/span 2;
+    grid-row: 1/span 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #project1{
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  #project1-info{
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  .project1-picture{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    margin: auto;
+  }
+  #project2{
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+  }
+  #project2-info{
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+  }
+  .project2-picture{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+    margin: auto;
+  }
+  #project3{
+    grid-column: 3/span 1;
+    grid-row: 5/span 1;
+  }
+  #project3-info{
+    grid-column: 3/span 1;
+    grid-row: 6/span 1;
+  }
+  .project3-picture{
+    grid-column: 2/span 1;
+    grid-row: 5/span 2;
+    margin:auto;
+  }
+  #project4{
+    grid-column: 3/span 1;
+    grid-row: 7/span 1;
+  }
+  #project4-info{
+    grid-column: 3/span 1;
+    grid-row: 7/span 1;
+  }
+  .project4-picture{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+    margin: auto;
+  }
+  #project5{
+    grid-column: 3/span 1;
+    grid-row: 8/span 1;
+  }
+  #project5-info{
+    grid-column: 3/span 1;
+    grid-row: 8/span 1;
+  }
+  .project5-picture{
+    grid-column: 2/span 1;
+    grid-row: 8/span 1;
+    margin:auto;
+  }
+  #project6{
+    grid-column: 3/span 1;
+    grid-row: 9/span 1;
+  }
+  #project6-info{
+    grid-column: 3/span 1;
+    grid-row: 9/span 1;
+  }
+  .project6-picture{
+    grid-column: 2/span 1;
+    grid-row: 9/span 1;
+    margin:auto;
+    padding-bottom: 10px;
+  }
 }
-
 
   @media screen and (prefers-reduced-motion: reduce){
     html{
