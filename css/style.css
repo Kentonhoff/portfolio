@@ -116,7 +116,7 @@ nav li:hover{
   }
 .main-grid-image img{
   max-width: 60vw;
-  height: 80%;
+  height: auto;
   overflow: hidden;
   object-fit: contain;
 }
