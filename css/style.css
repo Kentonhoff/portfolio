@@ -28,6 +28,7 @@ header{
 footer{
   background-color: #a161dd;
   color: #f1f227;
+  text-shadow: 2px 2px 5px blue;
   grid-column: 1 / -1;
   grid-row: -1;
   padding-top: 30px;
