@@ -108,7 +108,7 @@ nav li:hover{
     margin-top: 10px;
     grid-row-gap: 10px;
     justify-items: center;
-    padding: 20px;
+    padding-top: 30px;
   }
 .main-grid-image{
   grid-column: 2/span 1;
@@ -132,7 +132,7 @@ p{
   grid-row: 2/span 1;
 }
 #introduction-text{
-  text-align: center;
+  text-align: left;
   grid-column: 2/span 1;
   grid-row: 3/span 1;
   padding: 10px;
@@ -150,6 +150,7 @@ p{
   object-fit: contain;
 }
 #recent-projects-list{
+  padding-top: 20px;
   grid-column: 2/span 1;
   grid-row: 1/span 1;
 }
@@ -178,20 +179,20 @@ p{
   grid-column: 2/span 1;
   grid-row: 7/span 1;
   margin: auto;
+  padding-bottom: 20px;
 }
 .gallery{
   flex: 1;
   padding: 1.5em;
   flex-flow: column wrap;
-  margin-left: -8px;
-  width: 100%;
+  width: 90vw;
   column-gap: 10px;
   }
 .gallery-item{
-  max-height: 20vw;
+  max-height: 20vh;
   display: inline-block;
   width: auto;
-  margin: 0 8px 8px 0;
+  margin: 0 0 8px 0;
   }
 .gallery-item img{
   max-width: 100%;
@@ -217,6 +218,7 @@ p{
 #projects-list{
   grid-column: 2/span 1;
   grid-row: 1/span 1;
+  padding-top: 20px;
 }
 #project1{
   grid-column: 2/span 1;
