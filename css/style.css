@@ -341,13 +341,12 @@ p{
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color:#a161dd;
   color: black;
 }
 
 .flip-card-back {
-  background-color: purple;
-  color: white;
+  background-color:#a161dd;
   transform: rotateY(180deg);
 }
 .contact-information{
